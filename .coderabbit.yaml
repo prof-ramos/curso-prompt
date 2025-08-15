@@ -1,0 +1,52 @@
+# .coderabbit.yaml
+
+# General settings
+language: "pt-BR" # Use Brazilian Portuguese for reviews and comments
+early_access: false # Set to true if you want to try new features early
+
+# Configure automatic reviews
+reviews:
+  # Request review automatically when a PR is opened
+  auto_review:
+    enabled: true
+    # Configure conditions for auto-review (optional)
+    # conditions:
+    #   - files_changed: "> 5" # Only auto-review if more than 5 files changed
+
+  # Configure PR summary generation
+  summary:
+    enabled: true
+    # Tone of the summary (options: "brief", "professional", "humorous", "poetic")
+    tone: "professional"
+
+  # Configure code suggestions
+  suggestions:
+    enabled: true
+    # Configure suggestion severity levels to comment on
+    # severity:
+    #   - "critical"
+    #   - "high"
+    #   - "medium"
+    #   - "low"
+
+  # Configure test writing suggestions
+  test_suggestions:
+    enabled: true
+
+  # Configure custom prompts (optional)
+  # custom_prompts:
+  #   - name: "Security Check"
+  #     prompt: "Check this code for potential security vulnerabilities like SQL injection or XSS."
+  #     trigger: "on-demand" # Or "always"
+
+# Configure chat features (CodeRabbit Chat)
+chat:
+  # Enable or disable chat features
+  enabled: true
+
+# Configure knowledge base (if using custom documentation)
+# knowledge_base:
+#   enabled: true
+#   sources:
+#     - path: "docs/style_guide.md"
+#     - path: "docs/architecture.md"
